@@ -3,16 +3,26 @@ package tr.edu.maltepe.oop;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
-       // Student objst1 = new Student();  // creating objects of class student
-        //Student objst2 = new Student();
-        //Student objst3 = new Student();
+        Person obj0 = new Person();
+        Proffeser obj1 = new Proffeser();
+        Student obj2 = new Student();
 
 
-        Proffeser p1 = new Proffeser("ensar");
-        p1.teaches();
-        Proffeser p2 = new Proffeser ( "raif");
-        p1.teaches();
+        obj0.setName("ensar");
+        //obj0.getName();
+        System.out.println(obj0.getName());
+
+        obj0.setName1("Rawda");
+        //obj0.getName1();
+        System.out.println(obj0.getName1());
+        obj2.setstu_ID(867565);
+        System.out.println(obj2.getstu_ID());
+
+        System.out.println("Ahmed");
+
+        obj1.setPro_ID(928200);
+        System.out.println(obj1.getpro_ID());
+
 
 
     }

@@ -2,14 +2,22 @@ package tr.edu.maltepe.oop;
 
 public class Student {
 
-    String Std_name;
+    private int stdId;
 
-    Student(String name){
-        Std_name = name;
+    public Student(){
+
+    }
+
+    public int getId(){
+        return stdId;
+    }
+
+    public void setId(int id){
+        stdId = id;
     }
 
     void learns() {
-
+        System.out.println("student Id is"+stdId+"." );
 
     }
 }

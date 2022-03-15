@@ -1,16 +1,28 @@
 package tr.edu.maltepe.oop;
 
-public class Proffeser {
+public class Proffeser extends Person {
 
-    String prof_name;
+   private String prof_name;
 
-    Proffeser(String name){
+
+   public Proffeser() {
 
     }
 
+    public void setProName (String pi) {
 
+        prof_name = pi;
+    }
+
+    public int getproName() {
+
+       return prof_name;
+
+    }
     void teaches () {
 
-        System.out.println("prof"+prof_name+"is teaching now" )
+        System.out.println("prof"+prof_name+"is teaching now" );
     }
 }
+
+
