@@ -1,28 +1,34 @@
 package tr.edu.maltepe.oop;
-
 public class Main {
 
-    public static void main(String[] args) {
-        Person obj0 = new Person();
-        Proffeser obj1 = new Proffeser();
-        Student obj2 = new Student();
+    public static void main(String[] args, int n) {
+
+    }
+
+    {
+        int x;
+        Student s1,s2;
+        Javabook ajavabook, anotherjavabook, Javabook3;
+        Library mylib ;
 
 
-        obj0.setName("ensar");
-        //obj0.getName();
-        System.out.println(obj0.getName());
+        mylib= new Library();
 
-        obj0.setName1("Rawda");
-        //obj0.getName1();
-        System.out.println(obj0.getName1());
-        obj2.setstu_ID(867565);
-        System.out.println(obj2.getstu_ID());
+        ajavabook = new Javabook(  "essential java", 500);
+        anotherjavabook= new Javabook("intro java programming",  300);
+        Javabook3 = new Javabook("Java3",  200);
 
-        System.out.println("Ahmed");
 
-        obj1.setPro_ID(928200);
-        System.out.println(obj1.getpro_ID());
 
+        mylib.add_book(ajavabook);
+        mylib.add_book(anotherjavabook);
+
+
+        mylib.List_books();
+
+
+        s1=new Student();
+        s1.readBook(ajavabook);
 
 
     }
